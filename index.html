@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pet-Friendly City 🐾</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet-Friendly City 🐾</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <header>
     <div class="nav-brand">🐾 Pet-Friendly City</div>
     <nav>
       <ul>
@@ -19,106 +19,160 @@
       </ul>
     </nav>
     <button id="theme-toggle" aria-label="Toggle Light/Dark Theme">🌞</button>
-  </header>
+  </header> -->
+    <header>
+      <div class="nav-brand">🐾 Pet-Friendly City</div>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Making Cities Paw-some! 🐾✨</h1>
-      <p>Join us in creating safe, happy spaces for every furry friend.</p>
-      <div class="hero-buttons">
-        <a href="#volunteer" class="btn primary-btn">Join the Movement</a>
-        <a href="#volunteer" class="btn secondary-btn">Volunteer Now</a>
-        <a href="#about" class="btn tertiary-btn">Learn More</a>
+      <button
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav id="primary-navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#impact">Impact Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" aria-label="Toggle Light/Dark Theme">🌞</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Making Cities Paw-some! 🐾✨</h1>
+        <p>Join us in creating safe, happy spaces for every furry friend.</p>
+        <div class="hero-buttons">
+          <a href="#volunteer" class="btn primary-btn">Join the Movement</a>
+          <a href="#volunteer" class="btn secondary-btn">Volunteer Now</a>
+          <a href="#about" class="btn tertiary-btn">Learn More</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="about-section">
-    <h2>About the Campaign 🐶🏙️</h2>
-    <p>We are dedicated to making cities more pet-friendly by advocating for shelters, safe parks, and community support. Together, we can build a world where pets thrive.</p>
-  </section>
+    <section id="about" class="about-section">
+      <h2>About the Campaign 🐶🏙️</h2>
+      <p>
+        We are dedicated to making cities more pet-friendly by advocating for
+        shelters, safe parks, and community support. Together, we can build a
+        world where pets thrive.
+      </p>
+    </section>
 
-  <section id="volunteer" class="volunteer-section">
-    <h2>Become a Champion for Tails! 🐕‍🦺🐾</h2>
-    <form id="volunteer-form">
-      <label for="name">Full Name*</label>
-      <input type="text" id="name" name="name" required />
+    <section id="volunteer" class="volunteer-section">
+      <h2>Become a Champion for Tails! 🐕‍🦺🐾</h2>
+      <form id="volunteer-form">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" required />
 
-      <label for="city">City*</label>
-      <input type="text" id="city" name="city" required />
+        <label for="city">City*</label>
+        <input type="text" id="city" name="city" required />
 
-      <label for="role">Role Preference*</label>
-      <select id="role" name="role" required>
-        <option value="" disabled selected>Select a role</option>
-        <option value="shelter-support">Shelter Support</option>
-        <option value="event-organizer">Event Organizer</option>
-        <option value="fundraising">Fundraising</option>
-        <option value="pet-care">Pet Care & Adoption</option>
-        <option value="awareness">Awareness & Social Media</option>
-      </select>
+        <label for="role">Role Preference*</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Select a role</option>
+          <option value="shelter-support">Shelter Support</option>
+          <option value="event-organizer">Event Organizer</option>
+          <option value="fundraising">Fundraising</option>
+          <option value="pet-care">Pet Care & Adoption</option>
+          <option value="awareness">Awareness & Social Media</option>
+        </select>
 
-      <button type="submit" class="btn primary-btn">Sign Up</button>
-    </form>
-  </section>
+        <button type="submit" class="btn primary-btn">Sign Up</button>
+      </form>
+    </section>
 
-  <section id="impact" class="impact-section">
-    <h2>Impact Stories 🐾💖</h2>
-    <div class="stories">
-      <div class="story">
-        <h3>Luna’s Second Chance</h3>
-        <p>Thanks to our volunteers, Luna found a loving home after months on the streets.</p>
+    <section id="impact" class="impact-section">
+      <h2>Impact Stories 🐾💖</h2>
+      <div class="stories">
+        <div class="story">
+          <h3>Luna’s Second Chance</h3>
+          <p>
+            Thanks to our volunteers, Luna found a loving home after months on
+            the streets.
+          </p>
+        </div>
+        <div class="story">
+          <h3>Community Shelter Expansion</h3>
+          <p>
+            With your help, we built a shelter that now houses 50+ rescued pets
+            safely.
+          </p>
+        </div>
+        <div class="story">
+          <h3>City Park Transformation</h3>
+          <p>
+            We turned an abandoned park into a pet paradise with agility courses
+            and shaded areas.
+          </p>
+        </div>
       </div>
-      <div class="story">
-        <h3>Community Shelter Expansion</h3>
-        <p>With your help, we built a shelter that now houses 50+ rescued pets safely.</p>
-      </div>
-      <div class="story">
-        <h3>City Park Transformation</h3>
-        <p>We turned an abandoned park into a pet paradise with agility courses and shaded areas.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="adoption-section" id="adoption-section" aria-label="Adoptable pets carousel">
-    <h2>Adopt a Pet 🐕🐈</h2>
-    <button class="carousel-btn" id="carousel-prev" aria-label="Previous pets">&#10094;</button>
-    <div id="pet-carousel" aria-live="polite" tabindex="0" class="carousel-container">
-      <div class="pet-card">
-        <img src="images/labrador.jpg" alt="Bella the Labrador" />
-        <h3>Bella</h3>
-        <p>2-year-old Labrador, super friendly and loves belly rubs.</p>
-        <button class="btn secondary-btn">Adopt Me</button>
+    <section
+      class="adoption-section"
+      id="adoption-section"
+      aria-label="Adoptable pets carousel"
+    >
+      <h2>Adopt a Pet 🐕🐈</h2>
+      <button
+        class="carousel-btn"
+        id="carousel-prev"
+        aria-label="Previous pets"
+      >
+        &#10094;
+      </button>
+      <div
+        id="pet-carousel"
+        aria-live="polite"
+        tabindex="0"
+        class="carousel-container"
+      >
+        <div class="pet-card">
+          <img src="images/labrador.jpg" alt="Bella the Labrador" />
+          <h3>Bella</h3>
+          <p>2-year-old Labrador, super friendly and loves belly rubs.</p>
+          <button class="btn secondary-btn">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+          <img src="images/milo.jpg" alt="Milo the Kitten" />
+          <h3>Milo</h3>
+          <p>Playful kitten, 4 months old. Gets along well with dogs too!</p>
+          <button class="btn secondary-btn">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+          <img src="images/germanshepherd.jpg" alt="Rex the German Shepherd" />
+          <h3>Rex</h3>
+          <p>Energetic and loyal, 3-year-old German Shepherd.</p>
+          <button class="btn secondary-btn">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+          <img src="images/luna.jpg" alt="Luna the Cat" />
+          <h3>Luna</h3>
+          <p>Calm and affectionate, 1.5 years old. Great for quiet homes.</p>
+          <button class="btn secondary-btn">Adopt Me</button>
+        </div>
       </div>
-      <div class="pet-card">
-        <img src="images/milo.jpg" alt="Milo the Kitten" />
-        <h3>Milo</h3>
-        <p>Playful kitten, 4 months old. Gets along well with dogs too!</p>
-        <button class="btn secondary-btn">Adopt Me</button>
-      </div>
-      <div class="pet-card">
-        <img src="images/germanshepherd.jpg" alt="Rex the German Shepherd" />
-        <h3>Rex</h3>
-        <p>Energetic and loyal, 3-year-old German Shepherd.</p>
-        <button class="btn secondary-btn">Adopt Me</button>
-      </div>
-      <div class="pet-card">
-        <img src="images/luna.jpg" alt="Luna the Cat" />
-        <h3>Luna</h3>
-        <p>Calm and affectionate, 1.5 years old. Great for quiet homes.</p>
-        <button class="btn secondary-btn">Adopt Me</button>
-      </div>
-    </div>
-    <button class="carousel-btn" id="carousel-next" aria-label="Next pets">&#10095;</button>
-  </section>
+      <button class="carousel-btn" id="carousel-next" aria-label="Next pets">
+        &#10095;
+      </button>
+    </section>
 
-  <footer id="contact">
-    <h2>Contact Us 📬</h2>
-    <p>Email: support@petfriendlycity.org | Phone: +1 234 567 890</p>
-    <p>Follow us on social media for updates and events!</p>
-  </footer>
+    <footer id="contact">
+      <h2>Contact Us 📬</h2>
+      <p>Email: support@petfriendlycity.org | Phone: +1 234 567 890</p>
+      <p>Follow us on social media for updates and events!</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
